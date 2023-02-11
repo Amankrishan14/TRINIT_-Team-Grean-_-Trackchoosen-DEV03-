@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/feedimg"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:fontFamily="@font/poppinsblack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="20dp"
+        android:text="News Feed"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        android:textStyle="bold" >
+
+    </TextView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="95dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginStart="20dp"
+                app:cardBackgroundColor="#808080"
+                android:layout_width="355dp"
+                android:layout_height="165dp"
+                android:clickable="true"
+                app:cardCornerRadius="10dp"
+                android:elevation="15dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pradhan Mantri Fasal Bima Yojana (PMFBY): This is a government-sponsored crop insurance scheme that provides financial support to farmers in case of crop loss or damage due to natural calamities."
+                        android:textColor="#fff"
+                        android:layout_margin="10dp"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                app:cardBackgroundColor="#808080"
+                android:layout_width="355dp"
+                android:layout_height="165dp"
+                android:clickable="true"
+                app:cardCornerRadius="10dp"
+                android:elevation="15dp" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pradhan Mantri Kisan Samman Nidhi (PM-KISAN): This is a direct income support scheme for small and marginal farmers in India. The scheme provides financial assistance of Rs. 6,000 per year to eligible farmers."
+                        android:textColor="#fff"
+                        android:layout_margin="10dp"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="355dp"
+                android:layout_height="165dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:elevation="15dp"
+                app:cardBackgroundColor="#808080"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="National Livestock Mission: This scheme aims to promote sustainable and efficient livestock production in India, including the improvement of breeding, health, and feed and forage resources."
+                        android:textColor="#fff"
+                        android:layout_margin="10dp"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                app:cardBackgroundColor="#808080"
+                android:layout_width="355dp"
+                android:layout_height="165dp"
+                android:clickable="true"
+                app:cardCornerRadius="10dp"
+                android:elevation="15dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E-National Agricultural Market (e-NAM): This is an electronic platform for the marketing of agricultural produce in India. The platform provides a unified and transparent market for farmers to sell their produce and receive fair prices for their products.."
+                        android:textColor="#fff"
+                        android:layout_margin="10dp"
+                        android:textSize="19sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>
