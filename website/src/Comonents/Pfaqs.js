@@ -1,23 +1,24 @@
-import React from 'react'
+import React,{useState} from 'react'
+import {question} from './api'
 import "../Css/Pfaqs.css" 
+import Mypfaqs from './Mypfaqs'
 const Pfaqs = () => {
+  const [data, setData] = useState(question);
   return (
+   <>
    <div className='pfaqs'>
-    <button className="accordion">Section 1</button>
-<div className="panel">
-  <p>Lorem ipsum...</p>
-</div>
+   <section className='main-div'>
+    <h1>Frequently asked questions</h1>
+   {
+    data.map((curElem) => {
+          const { id } = curElem;
+          return <Mypfaqs key={id} {...curElem} />;
 
-<button className="accordion">Section 2</button>
-<div className="panel">
-  <p>Lorem ipsum...</p>
-</div>
-
-<button className="accordion">Section 3</button>
-<div className="panel">
-  <p>Lorem ipsum...</p>
-</div>
+    })
+   }
+   </section>
    </div>
+   </>
   )
 }
 
