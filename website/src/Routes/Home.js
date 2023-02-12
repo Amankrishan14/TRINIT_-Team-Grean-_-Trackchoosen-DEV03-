@@ -4,6 +4,7 @@ import Landing from '../Comonents/Landing'
 import Farming from '../Comonents/Farming'
 import Enthusiastic from '../Comonents/Enthusiastic'
 import Pfaqs from '../Comonents/Pfaqs'
+import Footer from '../Comonents/Footer'
 const Home = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const Home = () => {
         <Farming/>
         <Enthusiastic/>
         <Pfaqs/>
+        <Footer/>
     </div>
   )
 }

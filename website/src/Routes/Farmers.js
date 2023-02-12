@@ -1,8 +1,14 @@
 import React from 'react'
+import Farming from '../Comonents/Farming'
+import Footer from '../Comonents/Footer'
+import Navbar from '../Comonents/Navbar'
 
 const Farmers = () => {
   return (
-    <div>Farmers</div>
+    <><Navbar />
+    <Farming />
+    <Footer/>
+    </>
   )
 }
 

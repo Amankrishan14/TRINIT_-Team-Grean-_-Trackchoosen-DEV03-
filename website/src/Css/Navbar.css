@@ -9,6 +9,14 @@
     z-index: 10;
 
 }
+.Logo{
+    width: 120px;
+    height: 45px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+    margin-bottom: 14px;
+ }
 .nav-menu{
     display:flex;
 }
