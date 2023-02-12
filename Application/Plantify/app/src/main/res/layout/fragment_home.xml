@@ -1,15 +1,308 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/body_container"
+    android:background="@drawable/bimg"
     android:layout_height="match_parent"
-    android:background="@color/card_2"
-    tools:context=".HomeFragment">
+    tools:context=".MainActivity">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round_corner"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="#689F38"
+        app:itemRippleColor="#00FFFFFF"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/item_menui" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/location"
+        android:background="@drawable/custom_edit"
+        android:drawableStart="@drawable/ic_baseline_location_on_24"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:paddingStart="5dp"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:textColor="#fff"
+        android:inputType="textPersonName"
+        android:text="VIT Vellore" />
+
+    <EditText
+        android:id="@+id/search"
+        android:textColor="#fff"
+        android:background="@drawable/custom_edit"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawablePadding="5dp"
+        android:paddingStart="5dp"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="152dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Seach"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="10dp"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="90dp"
+        android:text="Discover"
+        android:fontFamily="@font/poppinsblack"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="#fff"
+        android:fontFamily="@font/poppinsblack"
+        android:layout_width="wrap_content"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="33dp"
+        android:textStyle="bold"
+        android:layout_marginTop="224dp"
+        android:text="HEY, Aman" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:fontFamily="@font/poppinsblack"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="33dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="269dp"
+        android:text="We missed you!" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginStart="20dp"
+                android:layout_width="355dp"
+                android:layout_height="165dp"
+                android:clickable="true"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="10dp"
+                android:elevation="15dp"
+                android:focusable="true">
+
+
+
+                <ImageView
+                    android:src="@drawable/custom_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="143dp"
+                        android:layout_height="121dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/finalstage" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="22dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="This week: Final stage of sweet corn"
+                        android:textColor="#fff"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/graph2"
+                android:layout_width="355dp"
+                android:layout_height="165dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="26dp"
+                android:clickable="true"
+                app:cardBackgroundColor="#116530"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp"
+
+                >
+                <ImageView
+                    android:src="@drawable/custom_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+
+                    >
+
+
+                    <ImageView
+                        android:layout_width="143dp"
+                        android:layout_height="121dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/midstage" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="22dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Last Week: Mid stage of sweet corn"
+                        android:textColor="#fff"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/graph3"
+                android:clickable="true"
+                android:layout_width="355dp"
+                android:layout_height="165dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="15dp"
+
+                >
+                <ImageView
+                    android:src="@drawable/custom_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+
+                    >
+
+
+
+                    <ImageView
+                        android:layout_width="143dp"
+                        android:layout_height="121dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/early" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="22dp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Last Month: Early stage of sweet corn"
+                        android:textColor="#fff"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageButton
+        android:id="@+id/camera"
+        android:layout_width="57dp"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="110dp"
+        android:background="#363636"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_camera" />
+
+    <ImageButton
+        android:id="@+id/chat"
+        android:layout_width="57dp"
+        android:layout_height="66dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="110dp"
+        android:background="#363636"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_chat" />
+
+
+</RelativeLayout>

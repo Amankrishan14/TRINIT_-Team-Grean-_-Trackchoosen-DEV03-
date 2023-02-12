@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/feedimg"
+    android:background="@drawable/bimg"
 
     android:orientation="vertical">
 
@@ -23,7 +23,7 @@
 
     </TextView>
 
-    <HorizontalScrollView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
@@ -40,7 +40,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_marginStart="20dp"
-                app:cardBackgroundColor="#808080"
+                app:cardBackgroundColor="#116530"
                 android:layout_width="355dp"
                 android:layout_height="165dp"
                 android:clickable="true"
@@ -67,7 +67,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="30dp"
-                app:cardBackgroundColor="#808080"
+                app:cardBackgroundColor="#116530"
                 android:layout_width="355dp"
                 android:layout_height="165dp"
                 android:clickable="true"
@@ -97,7 +97,7 @@
                 android:layout_marginTop="30dp"
                 android:clickable="true"
                 android:elevation="15dp"
-                app:cardBackgroundColor="#808080"
+                app:cardBackgroundColor="#116530"
                 app:cardCornerRadius="10dp">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -119,7 +119,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_marginTop="30dp"
                 android:layout_marginStart="20dp"
-                app:cardBackgroundColor="#808080"
+                app:cardBackgroundColor="#116530"
                 android:layout_width="355dp"
                 android:layout_height="165dp"
                 android:clickable="true"
@@ -142,7 +142,7 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
-    </HorizontalScrollView>
+    </ScrollView>
 
 
 </RelativeLayout>

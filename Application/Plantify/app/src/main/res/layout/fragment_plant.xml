@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#363636"
+    android:background="@drawable/bimg"
     tools:context=".PlantFragment">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -12,20 +12,200 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:fontFamily="@font/poppinsblack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="20dp"
+            android:text="Plantify"
+            android:textColor="#fff"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/searchView"
-            android:layout_width="match_parent"
+            android:background="#116530"
+            android:layout_width="400dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            app:queryHint="Find your plant"
             android:layout_height="50dp"
             android:iconifiedByDefault="false"
             android:queryHint="Search items"
             app:defaultQueryHint="Search items" />
 
-        <GridView
-            android:id="@+id/gridView"
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:numColumns="2" />
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="35dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="20dp"
+                    app:cardBackgroundColor="#116530"
+                    android:layout_width="355dp"
+                    android:layout_height="165dp"
+                    android:clickable="true"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="143dp"
+                            android:layout_height="121dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/succ" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="12dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Succulents love sun exposure, and most varieties need at least 4-6 hours of daily indirect sunlight to thrive"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    app:cardBackgroundColor="#116530"
+                    android:layout_width="355dp"
+                    android:layout_height="165dp"
+                    android:clickable="true"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="15dp" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="143dp"
+                            android:layout_height="121dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/succ" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="12dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Succulents love sun exposure, and most varieties need at least 4-6 hours of daily indirect sunlight to thrive"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="355dp"
+                    android:layout_height="165dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    app:cardBackgroundColor="#116530"
+                    app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="143dp"
+                            android:layout_height="121dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/succ" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="12dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Succulents love sun exposure, and most varieties need at least 4-6 hours of daily indirect sunlight to thrive"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="20dp"
+                    app:cardBackgroundColor="#116530"
+                    android:layout_width="355dp"
+                    android:layout_height="165dp"
+                    android:clickable="true"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="143dp"
+                            android:layout_height="121dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/succ" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="12dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:text="Succulents love sun exposure, and most varieties need at least 4-6 hours of daily indirect sunlight to thrive"
+                            android:textColor="#fff"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
 
